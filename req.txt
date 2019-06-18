@@ -1,0 +1,18 @@
+Your code have to orchestrate REST API services described in https://jsonplaceholder.typicode.com/. Based on "userId" number on input, orchestrate the API and provide a response in JSON format, containing following in one data structure:
+ - id
+ - username
+ - name
+ - email
+ - todos (all todos of given user)
+ - title
+ - completed
+Constraints: - Java + Spring (you can use additional libraries if needed)
+What would be evaluated:
+ - implementation fulfills the assignment
+ - readability of the code
+ - ability to test
+What is a plus:
+ - test coverage
+ - implementation efficiency (regarding HW resources consumption)
+ - API documentation
+Please deliver the assignment as a link to GitHub repository.
