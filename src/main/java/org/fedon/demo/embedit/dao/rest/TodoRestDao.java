@@ -24,11 +24,10 @@ public class TodoRestDao implements TodoDao {
 
     @Override
     public List<Todo> listByUserId(Integer id) {
-        ResponseEntity<List<Todo>> response = proxy.template().exchange("http://jsonplaceholder.typicode.com/todos?userId=" + id,
+        ResponseEntity<List<Todo>> response = proxy.template().exchange(url + id,
                 HttpMethod.GET,
                 null,
                 new ParameterizedTypeReference<List<Todo>>() {});
-        //        return proxy.template().getForObject("http://jsonplaceholder.typicode.com/todos?userId=" + id, List.class, (Object) null);
         return response.getBody();
     }
 }

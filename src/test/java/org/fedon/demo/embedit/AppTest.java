@@ -1,20 +1,16 @@
 package org.fedon.demo.embedit;
 
-import static org.junit.Assert.assertTrue;
-
 import org.junit.Test;
+import org.springframework.boot.SpringApplication;
 
 /**
- * Unit test for simple App.
+ * Spring context test.
  */
 public class AppTest 
 {
-    /**
-     * Rigorous Test :-)
-     */
     @Test
-    public void shouldAnswerWithTrue()
+    public void applicationContext()
     {
-        assertTrue( true );
+        SpringApplication.run(RestOrchApp.class, "");
     }
 }
